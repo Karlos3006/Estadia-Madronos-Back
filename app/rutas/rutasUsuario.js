@@ -3,13 +3,13 @@ const router = express.Router();
 const passport = require('passport');
 router.use(express.static('./app/public'));
 
-router.get('/registro', (req, res, next) => {
-    res.render('registro');
-});
+// router.get('/registro', (req, res, next) => {
+//     res.render('login');
+// });
 
 router.post('/registro', passport.authenticate('local-singup',{
     successRedirect: 'login',
-    failureRedirect: 'registro',
+    failureRedirect: 'login',
     passReqToCallback: true
 }));
 
