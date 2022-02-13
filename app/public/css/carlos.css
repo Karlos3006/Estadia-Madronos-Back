@@ -302,8 +302,8 @@ background: linear-gradient(32deg, rgba(57,181,74,1) 0%, rgba(227,164,2,1) 86%);
 
 .col img {
   border-radius: 10px;
-  width: 110px;
-  height: 80px;
+  width: 100px;
+  height: 70px;
   display: block;
 }
 
@@ -311,32 +311,6 @@ background: linear-gradient(32deg, rgba(57,181,74,1) 0%, rgba(227,164,2,1) 86%);
   transform: scale(1.1);
   transition: transform 0.2s;
 }
-
-/* .row2 {
-  margin-top: 20px;
-  display: flex;
-}
-
-.row2 img {
-  border-radius: 10px;
-  width: 105px;
-  height: 80px;
-  display: block;
-  margin-left: 10px;
-  margin-bottom: 1px;
-}
-
-.row2 img:hover {
-  transform: scale(1.1);
-  transition: transform 0.2s;
-}
-
-.row2 label {
-  color: var(--titulos);
-  margin-top: 10px;
-  margin-left: 20px;
-  max-width: 140px;
-} */
 
 .container-footer {
   width: 100%;
@@ -402,3 +376,107 @@ background: linear-gradient(32deg, rgba(57,181,74,1) 0%, rgba(227,164,2,1) 86%);
   transition: transform 0.2s;
 }
 /* inputs checks cambios */
+
+
+/* Seccion Buscador */
+
+.btn-group,#limpiarMapa{
+  display: block;
+}
+.contetabla{
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 30em;
+  position: relative;
+  }
+  .tabla tbody
+  {
+  position: absolute;
+  height: 25em;
+  overflow-y: auto;
+  width: 100%;
+  -webkit-box-shadow: 2px 2px 5px #999;
+ -moz-box-shadow: 2px 2px 5px #999;
+  }
+  .tabla tbody tr td{
+    width: 10%;
+  }
+  .tabla thead{
+    width: 100%;
+  }
+  .tabla thead tr th{
+    width: 10%;
+  }
+  
+.contmapa{
+  width: 100% ;
+  height: 25em;
+  display: block;
+}
+#map{
+  width:100% ;
+  height: 100%;
+}
+.contenidos{
+  display: block;
+  padding: 20px 0px;
+}
+.contenidos h5
+{
+  line-height: 5px;
+  font-weight: bolder;
+  color: #2f771d;
+}
+.contenidos p{
+  margin: -7px 0px;
+  line-height: 19px;
+  text-align: justify;
+  color: #757474;
+}
+table{
+  -webkit-box-shadow: 0px 10px 15px -5px rgba(0, 0, 0, 0.65);
+  box-shadow: 0px 10px 15px -5px rgba(0, 0, 0, 0.65);
+}
+.titumodal{
+  color: #2f771d;
+  font-size: 3rem;
+  margin-top:0px;
+  margin-bottom:0px;
+  text-align: center;
+}
+
+.div_file{
+    margin-left: 0px;
+    margin-right: 2px;
+    position:relative ;
+    padding: 5px 10px;
+    width: 100px;
+    height: 30px;
+    background-color: #2499e3;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.div_file:hover{
+  background-color: #217cb4;
+}
+.div_file input[type=file]{
+  position: absolute;
+  top:0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+.filelabel{
+ margin-top: 0px;
+ color: white;
+ text-align: center;
+}
+.filebtns{
+  display: flex;
+  justify-content: center;
+}
+
+/* Fin buscador */

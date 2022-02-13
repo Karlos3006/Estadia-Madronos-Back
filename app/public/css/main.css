@@ -467,7 +467,7 @@ img.pull-left {
 /* ------------------------------------------------------------------- 
  * ## tables
  * ------------------------------------------------------------------- */
-table {
+/* table {
   border-width: 0;
   width: 100%;
   max-width: 100%;
@@ -503,15 +503,15 @@ td:last-child {
 .table-responsive {
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
-}
+} */
 
 /* ------------------------------------------------------------------- 
  * ## Spacing 
  * ------------------------------------------------------------------- */
-button,
+/* button,
 .btn {
   margin-bottom: 1.2rem;
-}
+} */
 
 fieldset {
   margin-bottom: 1.5rem;
@@ -826,7 +826,7 @@ select:-webkit-autofill:focus {
  * # buttons
  *
  * ------------------------------------------------------------------- */
-.btn,
+/* .btn,
 button,
 input[type="submit"],
 input[type="reset"],
@@ -849,9 +849,9 @@ input[type="button"] {
   transition: all 0.3s ease-in-out;
   background-color: #c5c5c5;
   border: 0.2rem solid #c5c5c5;
-}
+} */
 
-.btn:hover,
+/* .btn:hover,
 button:hover,
 input[type="submit"]:hover,
 input[type="reset"]:hover,
@@ -865,7 +865,7 @@ input[type="button"]:focus {
   border-color: #b8b8b8;
   color: #000000;
   outline: 0;
-}
+} */
 
 /* button primary
  * ------------------------------------------------- */
@@ -3078,24 +3078,24 @@ html.no-csstransitions .home-content__main {
   position: relative;
 }
 .b-arbutus {
-  background-color: #151515;
   background-image: url("../img/Filtro/tessellata.jpg");
-  background-repeat: repeat;
+  background-size: cover;
+  background-repeat: no-repeat;
   background-position: center, center;
   padding-top: 15rem;
   padding-bottom: 12rem;
-  color: rgba(255, 255, 255, 0.5);
   position: relative;
+  filter: brightness(90%); 
 }
 
 .b-com {
-  background-color: #151515;
   background-image: url("../img/Filtro/com.jpg");
-  background-repeat: inherit;
-  background-position: center, center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
   padding-top: 15rem;
   padding-bottom: 12rem;
-  color: rgba(255, 255, 255, 0.5);
+  filter: brightness(90%); 
   position: relative;
 }
 

@@ -11,7 +11,7 @@ function fetch1() {
 		.then(function (data) {
 			var cont = ""
 			data.comarosta.forEach(function (dato, index) {
-				cont += '<tr><td scope="row">' + (index + 1) + '</td><td>' + dato.nombre + '</td><td><span class="d-inline-flex"><button type="button" class="btn btn-success edit" id="' + dato._id + '" >Editar</button><button type="button" class="btn btn-danger delete" id="' + dato._id + '" value="' + dato.nombre + '">Eliminar</button></span></td></tr>';
+				cont += '<tr><td scope="row">' + (index + 1) + '</td><td>' + dato.nombre + '</td><td><span class="d-inline-flex"><button type="button" class="btn btn-success btn-lg edit" id="' + dato._id + '" ><i class="fa fa-2x fa-edit"></i></button><button type="button" class="btn btn-danger btn-lg delete" id="' + dato._id + '" value="' + dato.nombre + '"><i class="fa fa-2x fa-trash" /></i></button></span></td></tr>';
 			});
 			document.getElementById("espa").innerHTML = cont;
 		}).catch(function (error) {
@@ -166,6 +166,20 @@ $("#img").on("change", function () {
 	}
 	else {
 		$("#inserta").prop('disabled', false);
+	}
+});
+
+///FUNCION cambiar imagenes
+$(".div_file input[type=file]").on("change", function () {
+	var img=this.files[0];
+	var foto=$(this).parent().parent().parent().parent().find('img');
+	var src=$(foto).attr('id');
+	if(img){
+		var reader = new FileReader(); //Leemos el contenido
+		reader.onload = function(e) { 
+		  $('#'+src).attr('src', e.target.result);
+		}	
+		reader.readAsDataURL(this.files[0]);
 	}
 });
 
